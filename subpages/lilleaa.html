@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://use.typekit.net/otv5lpl.css"> <!-- adobe fonts -->
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/lilleaa.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/> <!-- Map CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script> <!-- Map -->
+
+
+    <title>Fishing at the Lilleå</title>
+    <meta name="description" content="Read about fishing in the Lilleå and what fish you can find there.">
+</head>
+
+<body data-page="lilleaa"> <!-- Idenitifies page for fish boxes in javascript.js -->
+    <header class="top-nav-container">
+        <nav class="navigation">
+            <div class="burger-menu" id="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="lilleaa.html">Lilleå</a></li>
+                <li><a href="svejstrup.html">Svejstup</a></li>
+                <li><a href="vadsted.html">Vadsted</a></li>
+            </ul>
+            <div class="logo-container">
+                <a href="../index.html" id="logo" class="logo">Favrskov Fishing</a>
+            <div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Back to Top Button -->
+        <button id="back-to-top" class="back-to-top">
+            <img src="../images/totop.svg" alt="Back to top">
+        </button>
+
+        <!-- Lilleå mood section -->
+        <span class="mood">
+            <h1>Lilleå</h1>
+        </span>
+
+        <!-- Location Description -->
+        <div class="content">
+            <article class="description">
+                <h2>About Lilleå</h2>
+                <p>Lilleå, as suggested by its name, is a little river that runs off the Gudenå. It offers some of the best sea trout fishing in all of Denmark but you can also catch a variety of other fish such as the flatfish or pike. 
+                <br><br>
+                Fish aren’t the only thing in store along the river either as you can often catch a glimpse of a beautiful kingfisher or an adorable weasel. In order to fish here, you will need a national angling license and a Hadsten fishing association membership or day pass.
+                <br><br>
+                Fishing is allowed at all hours between 01/03 to 31/10 but please do not bring your dog with you!</p>
+                <img src="../images/PicnicTablewhite.svg" alt="picnicicon">
+
+                <span class="location-photo"></span>
+            </article>
+            
+             <!-- Scrolling fish -->
+            <section class="fish-section">
+                <h2>Fish You Can Catch Here</h2>
+                <div class="fish-container"></div>
+            </section>
+
+            <div class="popup" id="popup">
+                <div class="popup-content">
+                    <span class="close" id="close-popup">&times;</span>
+                    <h3 id="popup-title"></h3>
+                    <img id="popup-image" src="" alt="Fish" />
+                    <p id="popup-description"></p>
+                </div>
+            </div>
+
+            <!-- Information section -->
+            <section class="information-container">
+                <h2 class="header">Information</h2>
+                <section class="info-box">
+                    <h3>Weather</h3>
+                </section>
+                <section class="info-box">
+                    <h3>Licenses you need</h3>
+                </section>
+                <section class="info-box">
+                    <h3>Tips</h3>
+                </section>
+            </section>
+                <!-- Map of lilleåen -->
+            <section class="submapsection">
+                <h2>Map</h2>
+                <span class="map-legend">
+                    <div class="legenditem" class="picniclegend"> <img src="../images/PicnicTablewhite.svg" alt="picnic table icon">Picnic</div>
+                    <div class="legenditem" class="parkinglegend"><img src="../images/Parkinglegend.svg" alt="Parking icon">Parking</div>
+                </span>
+                    <div class="mapcontainer">
+                        <div id="map"></div>
+                    </div>
+                    <span class="address">Bidstrupvej 1, 8870 Langå</span>
+            </section>
+        </div>
+    </main>
+ 
+<!-- sticky navbar -->
+ <nav class="bottom-nav">
+    <a href="../index.html" class="nav-item">
+        <img src="../images/Home.svg" alt="Home">
+        Home
+    </a>
+    <span class="bottom-divider"></span>
+    <a href="lilleaa.html" class="nav-item">
+        <img src="../images/Creek.svg" alt="Lilleå">
+        Lilleå
+    </a>
+    <span class="bottom-divider"></span>
+    <a href="svejstrup.html" class="nav-item">
+        <img src="../images/Tent in the Forest.svg" alt="Svejstrup">
+        Svejstrup
+    </a>
+    <span class="bottom-divider"></span>
+    <a href="vadsted.html" class="nav-item">
+        <img src="../images/Lake.svg" alt="Vadsted">
+        Vadsted
+    </a>
+ </nav>
+
+<!-- Javascript -->
+    <script src="../js/javascript.js"></script>
+    <script src="../js/lilleaa.js"></script>
+    
+</body>
+</html>

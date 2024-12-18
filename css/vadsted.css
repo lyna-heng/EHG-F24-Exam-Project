@@ -1,0 +1,103 @@
+body {
+    font-family: azo-sans-web, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    margin: 0 auto;
+    color:#EBE9E0;
+}
+
+main {
+    height: 100%;
+}
+
+.mood {
+    display: flex;
+    height: 50vh;
+    width: 100vw;
+    background-image: url(../images/vadstedmood.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+    z-index: 0;
+}
+
+.mood h1 {
+    color: #0D1C3F;
+    position: absolute;
+    top: 15%; /* 15% from the top */
+    left: 50%; /* Start at the center */
+    transform: translateX(-50%); /* Shift back by half of its width */
+    margin: 0; /* Remove unnecessary margin */
+    text-align: center; /* Ensure text alignment is centered */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background-image: url(../images/vadstedcontentmobile.svg);
+    background-size: cover;
+    height: auto;
+    width: 100vw;
+    margin-top: -30vh;
+    z-index: 1;
+}
+
+.content h2 {
+    color: #EBE9E0;
+    padding: 5px 0;
+}
+
+.description {
+    width: 85vw; /* Adjust width for smaller screens */
+    margin: 230px auto 0; /* Center the container horizontally */
+    padding: 20px 0; /* Add consistent vertical spacing */
+    text-align: left; /* Keep the text left-justified */
+}
+
+.description h2 {
+    width: fit-content;
+}
+
+.location-photo {
+    background-image: url(../images/vadstedphoto.png);
+}
+
+.information-container h3 {
+    color: #0D1C3F;
+}
+
+@media (min-width: 768px) {
+
+    .mood {
+        background-image: url(../images/vadstedmooddesk.png);
+        background-position: 20% 100%;
+        height: 60vh;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .description {
+        
+        width: 710px; /* Narrower width for better readability */
+        margin: 0; /* Horizontally center the container */
+        text-align: left; /* Maintain left justification */
+    }
+    
+    .content {
+        background-image: url(../images/vadstedcontentdesk.svg);
+        margin-top: -40vh;
+    }
+
+    .fish-section {
+        margin: auto;
+    }
+
+    .fish-container {
+        justify-content: center;
+    }
+
+}

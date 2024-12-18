@@ -1,0 +1,192 @@
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+/* mood/hero section */
+.hero {
+    display: flex;
+    width: 100vw;
+    top: 0;
+    bottom: 0;
+    position: relative;
+}
+
+.hero video {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    z-index: -1;
+    object-fit: cover;
+    margin-top: 76px;
+}
+
+/* hero end */
+
+/* Peaceful fishing spots */
+
+.mainmap-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: fit-content;
+    overflow: hidden; /* Ensures content does not bleed out */
+    width: 100vw;
+    height: 60vh;
+    margin-top: -70px;
+    background-image: url(../images/indexmap-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+h1 {
+    color: #EBE9E0;
+    font-family: azo-sans-web, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    padding: 40px 10px;
+}
+
+/* Map container */
+.options-map {
+    position: relative;
+    width: 363px;
+    height: 296px;
+    z-index: 4;
+    margin-bottom: 80px;
+}
+
+#map { 
+    height: 296px; 
+}
+
+/* fishing for location feature */
+
+.fishing-feature {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-image: url(../images/Rectangle\ 29.svg);
+    background-color: #151C2D;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    text-align: center;
+    margin-top: -30px;
+}
+
+.fishing-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    margin: 0 2vw;
+}
+
+.locationfinder {
+    color: #EBE9E0;
+    padding: 20px;
+    margin: 20px 20px;
+}
+
+.fishing-rod-icon {
+    align-self: flex-end;
+    height: 192px;
+    width: 164px;
+    margin-right: 60px;
+}
+
+.Gofishbutton {
+    align-self: flex-end;
+    width: 137px;
+    height: 43px;
+    padding: 2px;
+    border: 0;
+    border-radius: 25px;
+    background: #D9754A;
+    box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    margin: 10px 10px;
+}
+
+/* Tackle Section */
+
+.tackle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 260px;
+    background-image: url(../images/Rectangle\ 24.svg);
+    background-color: #23304B;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.tackle-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50vw;
+    margin: 10px 40px;
+}
+
+.tackle-content h2 {
+    padding-top: 40px;
+}
+
+.tackle-content button {
+    width: 79px;
+    height: 43px;
+    padding: 2px;
+    border-radius: 25px;
+    border: 0;
+    background: #EBE9E0;
+    box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+/* media queries */
+@media (min-width: 500px) {
+    .hero video {
+        height: 569px;
+    }
+
+    .mainmap-container {
+        margin-top: -250px;
+    }
+
+    .fishing-feature {
+        min-height: fit-content;
+    }
+
+    .fishing-content {
+        align-content: center;
+    }
+
+    .tackle-content {
+        align-self: center;
+        padding-top: 40px;
+    }
+
+    h1 {
+        margin-top: 180px;
+    }
+
+    .locationfinder {
+        padding-top: 120px;
+    }
+
+    .tackle-content {
+        padding-top: 80px;
+    }
+
+}
+

@@ -1,0 +1,90 @@
+[
+    {
+        "name": "Brown Trout",
+        "image": "/images/browntrout.svg",
+        "bait": ["Spinners", "Worms", "Nymphs", "Small minnows", "Flies"],
+        "rod": "Medium-fast",
+        "weight": "10-30 grams",
+        "page": ["lilleaa"]
+    },
+    {
+        "name": "Pike",
+        "image": "/images/pike.svg",
+        "bait": ["Large lures", "Spinners", "Jerkbaits", "Live bait (roaches)"],
+        "rod": "Fast",
+        "weight": "20-60 grams",
+        "page": ["lilleaa", "vadsted"]
+    },
+    {
+        "name": "Gudgeon",
+        "image": "/images/gudgeon.svg",
+        "bait": ["Maggots", "Bread", "Small Worms"],
+        "rod": "Slow",
+        "weight": "1-10 grams",
+        "page": ["lilleaa"]
+    },
+    {
+        "name": "Sea Trout",
+        "image": "/images/seatrout.svg",
+        "bait": ["Flies", "Shrimp", "Lures", "Minnows"],
+        "rod": "Medium-fast",
+        "weight": "15-40 grams",
+        "page": ["lilleaa"]
+    },
+    {
+        "name": "Flatfish",
+        "image": "/images/flatfish.svg",
+        "bait": ["Flies", "Shrimp", "Lures", "Minnows"],
+        "rod": "Medium-light",
+        "weight": "10-30 grams",
+        "page": ["lilleaa"]
+    },
+    {
+        "name": "Rainbow Trout",
+        "image": "/images/rainbowtrout.svg",
+        "bait": ["Spinners", "Powerbait", "Flies", "Small spoons"],
+        "rod": "Medium",
+        "weight": "5-20 grams",
+        "page": ["svejstrup"]
+    },
+    {
+        "name": "Golden Trout",
+        "image": "/images/goldentrout.svg",
+        "bait": ["Small flies", "Spinners", "Live bait (worms)"],
+        "rod": "Light",
+        "weight": "5-15 grams",
+        "page": ["svejstrup"]
+    },
+    {
+        "name": "European Crayfish",
+        "image": "/images/crayfish.svg",
+        "bait": ["Worms", "Chicken live", "Small fish pieces"],
+        "rod": "N/A",
+        "weight": "N/A",
+        "page": ["lilleaa"]
+    },
+    {
+        "name": "Brook Trout",
+        "image": "/images/brooktrout.svg",
+        "bait": ["Spinners", "Worms", "Flies", "Small minnows"],
+        "rod": "Medium-light",
+        "weight": "5-15 grams",
+        "page": ["lilleaa"]
+    },
+    {
+        "name": "Common Roach",
+        "image": "/images/roach.svg",
+        "bait": ["Worms", "Maggots", "Bread", "Sweetcorn"],
+        "rod": "Slow",
+        "weight": "5-20 grams",
+        "page": ["vadsted"]
+    },
+    {
+        "name": "Common Bream",
+        "image": "/images/commonbream.svg",
+        "bait": ["Worms", "Maggots", "Groundbait", "Sweetcorn"],
+        "rod": "Medium-light",
+        "weight": "10-40 grams",
+        "page": ["vadsted"]
+    }
+]

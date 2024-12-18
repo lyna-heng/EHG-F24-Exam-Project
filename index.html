@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://use.typekit.net/otv5lpl.css"> <!-- adobe fonts -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/> <!-- Map CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script> <!-- Map -->
+
+    <title>Favrskov Fishing</title>
+    <meta name="description" content="Discover peaceful fishing spots in Favrskov Kommune!">
+</head>
+
+<body>
+    <header class="top-nav-container">
+        <nav class="navigation">
+            <div class="burger-menu" id="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="subpages/lilleaa.html">Lilleå</a></li>
+                <li><a href="subpages/svejstrup.html">Svejstup</a></li>
+                <li><a href="subpages/vadsted.html">Vadsted</a></li>
+            </ul>
+            <div class="logo-container">
+                <a href="index.html" id="logo" class="logo">Favrskov Fishing</a>
+                <span></span>
+            <div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <video autoplay muted loop>
+                <source src="videos/watervideo.MP4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+        
+        <!-- Back to Top Button -->
+        <button id="back-to-top" class="back-to-top">
+            <img src="images/totop.svg" alt="Back to top">
+        </button>
+
+        <!-- Section 1 -->
+        <section class="mainmap-container">
+            <h1>Peaceful Fishing Spots</h1>
+            <div class="options-map">
+                <div id="map"></div>
+            </div>
+        </section>
+
+        <!-- Section 2 -->
+        <section class="fishing-feature">
+            <div class="fishing-content">
+                <h2 class="locationfinder">Don't know where to head first?</h2>
+                <img class="fishing-rod-icon" src="images/fishingRod.svg" alt="Fishing rod">
+                <button class="Gofishbutton">Fish for your next destination</button>
+            </div>
+        </section>
+
+        <!-- Section 3 -->
+         <section class="tackle-container">
+            <div class="tackle-content">
+                <h2>Just Getting Started?</h2>
+                <p>Buy everything you need to start fishing here!</p>
+                <a href="https://www.lystfisk.dk/" target="_blank">
+                    <button>Buy here</button>
+                </a>
+            </div>
+         </section>
+    </main>
+ 
+<!-- sticky navbar -->
+ <nav class="bottom-nav">
+    <a href="index.html" class="nav-item">
+        <img src="images/Home.svg" alt="Home">
+        Home
+    </a>
+    <span class="bottom-divider"></span>
+    <a href="subpages/lilleaa.html" class="nav-item">
+        <img src="images/Creek.svg" alt="Lilleå">
+        Lilleå
+    </a>
+    <span class="bottom-divider"></span>
+    <a href="subpages/svejstrup.html" class="nav-item">
+        <img src="images/Tent in the Forest.svg" alt="Svejstrup">
+        Svejstrup
+    </a>
+    <span class="bottom-divider"></span>
+    <a href="subpages/vadsted.html" class="nav-item">
+        <img src="images/Lake.svg" alt="Vadsted">
+        Vadsted
+    </a>
+ </nav>
+
+<!-- Javascript -->
+    <script src="js/javascript.js"></script>
+    <script src="js/index.js"></script>    
+</body>
+</html>

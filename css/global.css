@@ -1,0 +1,411 @@
+/* Global CSS rules */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: azo-sans-web, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px;
+    margin: 0 auto;
+    color:#0D1C3F;
+}
+
+a {
+    color: #0D1C3F;
+    text-decoration: none; /* Optional: removes underline */
+}
+
+h1 {
+    font-family: parisplus-std, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.48px;
+    font-size: 24px;
+}
+
+h2 {
+    font-family: azo-sans-web, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+h3 {
+    font-family: azo-sans-web, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: #0D1C3F;
+}
+
+button {
+    font-family: azo-sans-web, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    margin: 0 auto;
+    color:#0D1C3F;
+}
+/* end */
+
+/* Navigation */
+
+.top-nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 76px;
+    background-color: #EBE9E0;
+    z-index: 10;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+/* Burger menu */
+.burger-menu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burger-menu span {
+    width: 28px;
+    height: 3px;
+    background-color: #0D1C3F;
+    margin: 3px 0;
+    border-radius: 3px;
+}
+
+.navigation .burger-menu {
+    justify-content: center;
+}
+
+.navigation ul.active {
+    display: flex;
+    position: absolute; /* menu relative to parent */
+    flex-direction: column; /* list items are in columns */
+    right: 0; /* moves menu to the right hand side */
+    justify-content: center;
+    width: 109px;
+    height: 161px;
+    top: 70px;
+    background-color: #EBE9E0;
+    z-index: 10;
+    border-radius: 4px;
+}
+
+.navigation ul {
+    display: none; /* list not visible until burger menu toggled */
+    list-style: none;
+}
+
+.navigation ul li {
+    margin: 7px 7px;
+    text-align: left;
+    padding-left: 10px;
+    text-decoration: underline;
+}
+
+/* Logo styling */
+.logo-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo-container span {
+    width: 2px;
+    height: 32px;
+    border-radius: 2px;
+    background-color: #B0AFA8;
+    margin: 0 8px;
+}
+
+.logo {
+    font-family: parisplus-std, sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    font-style: normal;
+    text-decoration: none;
+    letter-spacing: 0.48px;
+}
+
+/* Back to top button */
+.back-to-top {
+    position: fixed;
+    bottom: 15vh;
+    right: 2vw;
+    cursor: pointer;
+    z-index: 10;
+    background: none;
+    border: 0; /* Removing random border */
+}
+
+/* Bottom navigation bar */
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 56px;
+    padding: 0 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #EBE9E0;
+    z-index: 2;
+}
+
+.bottom-nav a {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottom-nav a img {
+    height: 32px;
+    width: 32px;
+    align-self: center;
+}
+
+.bottom-divider {
+    width: 44px;
+    height: 2px;
+    border-radius: 2px;
+    transform: rotate(90deg);
+    flex-shrink: 0;
+    background-color: #B0AFA8;
+    z-index: 2;
+}
+
+/* sub-page description */
+.location-photo {
+    display: block;
+    height: 144px;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 4px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px 0;
+}
+
+/* Fish boxes for sub-pages */
+.fish-section {
+    overflow: hidden;
+}
+
+.fish-section h2 {
+    justify-self: center;
+    margin-top: 80px;
+    padding: 10px 0;
+}
+
+.fish-container {
+    display: flex;
+    width: auto;
+    flex-direction: row; /* Horizontal layout */
+    gap: 23px; /* Spacing between boxes */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 10px; /* Padding to avoid content touching edges */
+    scroll-snap-type: x proximity; /* Snaps when in proximity (feels smoother than mandatory to me) */
+}
+
+.fishbox {
+    flex: 0 0 129px; /* Ensure consistent box width */
+    width: 129px;
+    height: 111px;
+    border-radius: 4px; /* Rounded corners */
+    background-size: cover; /* Cover the container */
+    background-position: center; /* Center the image */
+    scroll-snap-align: center; /* Snap boxes cleanly */
+}
+
+.fish-container img {
+    width: 100%; /* Make sure image fills the box */
+    height: 100%; /* Maintain consistent size */
+    object-fit: cover; /* Prevent stretching */
+}
+
+/* fish popups */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-content {
+    background: white;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    max-width: 400px;
+}
+
+.popup img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* sub-page information sections */
+
+.information-container {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px 0;
+}
+
+.information-container h2 {
+    margin-bottom: -14px;
+}
+
+.info-box {
+    width: 355px;
+    height: 106px;
+    background-color: #EBE9E0;
+    border-radius: 4px;
+}
+
+/* subpage map */
+
+.submapsection {
+    justify-items: center;
+    margin: 40px 0 76px 0;
+}
+
+.submapsection h2 {
+    margin: 10px
+}
+
+.mapcontainer {
+    margin-top: 10px;
+    height: 212px;
+    width: 357px;
+}
+
+#map {
+    height: 212px;
+}
+
+/* subpage map legend */
+.map-legend {
+    width: 80vw;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.legenditem {
+    display: flex;
+    flex-direction: row;
+}
+
+.legenditem img {
+    height: 14px;
+    width: 14px;
+    align-self: self-end; /* align icons with text */
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+
+    .burger-menu {
+        display: none;
+    }
+
+    .navigation ul {
+        list-style: none;
+        display: flex;
+        justify-content: right;
+    }
+    
+    .link {
+        color: #0D1C3F;
+    }
+
+    .bottom-nav {
+        display: none;
+    }
+
+    .mood {
+        margin-top: 76px;
+    }
+    
+
+    main .content .description {
+        margin-top: 450px;
+        align-self: center;
+    }
+
+    .description p {
+        width: 40vw;
+    }
+
+
+    .location-photo {
+        width: 710px;
+        height:288px;
+    }
+
+    .fishbox {
+        flex: 0 0 258px; /* Ensure consistent box width */
+        width: 258px;
+        height: 222px;
+    }
+
+    .info-box {
+        width: 710px;
+        height: 212px;
+    }
+
+    .mapcontainer { /* when page and map is scaled up allows container to fit map */
+        width: auto;
+        height: auto;
+        display: flex;
+    }
+
+    #map {
+        width: 712px;
+        height: 424px;
+        justify-self: center;
+    }
+
+}
