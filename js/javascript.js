@@ -32,7 +32,7 @@ const closePopup = document.getElementById("close-popup");
 // Identify the current page using a data attribute in the HTML body
 const currentPage = document.body.getAttribute("data-page") || "default";
 
-fetch('/js/fish.json')
+fetch('/EHG-F24-Exam-Project/js/fish.json')
     .then(response => response.json()) // Parse JSON
     .then(fishData => {
         console.log("Current Page:", currentPage); // Debugging the current page
