@@ -100,6 +100,16 @@ main {
     color: #0D1C3F;
 }
 
+.submapsection {
+    margin: 0 auto;
+    /* Center the section */
+    padding: 70px 0;
+    /* Add vertical padding */
+    text-align: left;
+    /* Align text to the left */
+}
+
+
 @media (min-width: 768px) {
 
     .mood {
@@ -128,7 +138,7 @@ main {
 
     .content {
         background-image: url(../images/svejstrupcontentdesk.svg);
-        margin-top: 2;
+        margin-top: 2px;
     }
 
     .location-photo {

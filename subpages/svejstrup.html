@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/svejstrup.css">
 
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/> <!-- Map CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""> <!-- Map CSS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script> <!-- Map -->
 
 
@@ -33,7 +33,7 @@
             <div class="logo-container">
                 <a href="../index.html" id="logo" class="logo">Favrskov Fishing</a>
                 <span></span>
-            <div>
+            </div>
         </nav>
     </header>
 
@@ -44,9 +44,9 @@
         </button>
         
         <!-- Svejstrup mood section -->
-        <span class="mood">
-            <a href="https://www.fiskeparkensvejstrup.dk/" target="_blank"> 
-                <button class="booking">Book here</button>
+        <div class="mood">
+            <a class="booking" href="https://www.fiskeparkensvejstrup.dk/" target="_blank"> 
+                Book here
             </a>
             <img class="tent" src="../images/tentVector.svg" alt="Tent">
 
@@ -60,7 +60,7 @@
                 <img src="../images/Grill.svg" alt="grill icon">
 
             </article>
-        </span>
+        </div>
 
         <div class="content">
             <span class="location-photo"></span>
@@ -75,7 +75,7 @@
                 <div class="popup-content">
                     <span class="close" id="close-popup">&times;</span>
                     <h3 id="popup-title"></h3>
-                    <img id="popup-image" src="" alt="Fish" />
+                    <img id="popup-image" src="" alt="Fish">
                     <p id="popup-description"></p>
                 </div>
             </div>
@@ -96,13 +96,13 @@
                 <!-- Map of lilleåen -->
             <section class="submapsection">
                 <h2>Map</h2>
-                <span class="map-legend">
-                    <div class="legenditem" class="picniclegend"> <img src="../images/PicnicTablewhite.svg" alt="picnic table icon">Picnic</div>
-                    <div class="legenditem" class="clublegend"> <img src="../images/Logcabinwhite.svg" alt="cabin icon"> Clubhouse</div>
-                    <div class="legenditem" class="toiletlegend"> <img src="../images/ToiletBowlwhite.svg" alt="toilet icon">Toilet</div>
-                    <div class="legenditem" class="grilllegend"> <img src="../images/grillwhite.svg" alt="grill icon">Grill</div>
-                    <div class="legenditem" class="campsitelegend"><img src="../images/Campingtentwhite.svg" alt="tent icon">Campsite</div>
-                    <div class="legenditem" class="parkinglegend"><img src="../images/Parkinglegend.svg" alt="Parking icon">Parking</div>
+                <div class="map-legend">
+                    <div class="legenditem" id="picniclegend"> <img src="../images/PicnicTablewhite.svg" alt="picnic table icon">Picnic</div>
+                    <div class="legenditem" id="clublegend"> <img src="../images/Logcabinwhite.svg" alt="cabin icon"> Clubhouse</div>
+                    <div class="legenditem" id="toiletlegend"> <img src="../images/ToiletBowlwhite.svg" alt="toilet icon">Toilet</div>
+                    <div class="legenditem" id="grilllegend"> <img src="../images/grillwhite.svg" alt="grill icon">Grill</div>
+                    <div class="legenditem" id="campsitelegend"><img src="../images/Campingtentwhite.svg" alt="tent icon">Campsite</div>
+                    <div class="legenditem" id="parkinglegend"><img src="../images/Parkinglegend.svg" alt="Parking icon">Parking</div>
                 </span>
                     <div class="mapcontainer">
                         <div id="map"></div>
@@ -125,7 +125,7 @@
     </a>
     <span class="bottom-divider"></span>
     <a href="svejstrup.html" class="nav-item">
-        <img src="../images/Tent in the Forest.svg" alt="Svejstrup">
+        <img src="../images/TentintheForest.svg" alt="Svejstrup">
         Svejstrup
     </a>
     <span class="bottom-divider"></span>

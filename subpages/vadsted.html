@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/vadsted.css">
     
 
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/> <!-- Map CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""> <!-- Map CSS -->
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script> <!-- Map -->
 
     <title>Fishing at Vadsted Storsø</title>
@@ -33,7 +33,7 @@
             <div class="logo-container">
                 <a href="../index.html" id="logo" class="logo">Favrskov Fishing</a>
                 <span></span>
-            <div>
+            </div>
         </nav>
     </header>
 
@@ -44,9 +44,9 @@
         </button>
         
         <!-- Vadsted mood section -->
-        <span class="mood">
+        <div class="mood">
             <h1>Vadsted Storsø</h1>
-        </span>
+        </div>
 
         <!-- Location Description -->
         <div class="content">
@@ -75,7 +75,7 @@
                 <div class="popup-content">
                     <span class="close" id="close-popup">&times;</span>
                     <h3 id="popup-title"></h3>
-                    <img id="popup-image" src="" alt="Fish" />
+                    <img id="popup-image" src="" alt="Fish">
                     <p id="popup-description"></p>
                 </div>
             </div>
@@ -96,11 +96,11 @@
                 <!-- Map of Vadsted Storsø -->
             <section class="submapsection">
                 <h2>Map</h2>
-                <span class="map-legend">
-                    <div class="legenditem" class="shelterlegend"><img src="../images/Pavilionwhite.svg" alt="shelter icon">Shelter</div>
-                    <div class="legenditem" class="campfire"><img src="../images/Campfirewhite.svg" alt="tent icon">Campfire</div>
-                    <div class="legenditem" class="parkinglegend"><img src="../images/Parkinglegend.svg" alt="Parking icon">Parking</div>
-                </span>
+                <div class="map-legend">
+                    <div class="legenditem" id="shelterlegend"><img src="../images/Pavilionwhite.svg" alt="shelter icon">Shelter</div>
+                    <div class="legenditem" id="campfire"><img src="../images/Campfirewhite.svg" alt="tent icon">Campfire</div>
+                    <div class="legenditem" id="parkinglegend"><img src="../images/Parkinglegend.svg" alt="Parking icon">Parking</div>
+                </div>
                     <div class="mapcontainer">
                         <div id="map"></div>
                     </div>
@@ -122,7 +122,7 @@
     </a>
     <span class="bottom-divider"></span>
     <a href="svejstrup.html" class="nav-item">
-        <img src="../images/Tent in the Forest.svg" alt="Svejstrup">
+        <img src="../images/TentintheForest.svg" alt="Svejstrup">
         Svejstrup
     </a>
     <span class="bottom-divider"></span>
